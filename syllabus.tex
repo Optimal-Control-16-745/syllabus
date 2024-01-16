@@ -11,7 +11,7 @@
 \newcommand{\todo}[1]{\textcolor{red}{TODO: #1}}
 
 \title{16-745: Optimal Control and Reinforcement Learning}
-\author{Spring 2023}
+\author{Spring 2024}
 \date{}
 
 \begin{document}
@@ -31,25 +31,27 @@ This is a course about how to make robots move through and interact with their e
 \begin{center}
 \begin{tabular}{l l}
 	Prof. Zac Manchester & \textbf{Email:} \href{mailto:zacm@cmu.edu}{zacm@cmu.edu} \\
-	TA: Kevin Tracy & \textbf{Email:} \href{mailto:ktracy@cmu.edu}{ktracy@cmu.edu}
+	Head TA: Kevin Tracy & \textbf{Email:} \href{mailto:ktracy@cmu.edu}{ktracy@cmu.edu}
 	\\
 	TA: Jeong Hun (JJ) Lee & \textbf{Email:} \href{mailto:jeonghunlee@cmu.edu}{jeonghunlee@cmu.edu}
 	\\
-	TA: Swaminathan (Swami) Gurumurthy & \textbf{Email:} \href{sgurumur@andrew.cmu.edu}{sgurumur@andrew.cmu.edu}
+	TA: Fausto Vega & \textbf{Email:} \href{fvega@andrew.cmu.edu}{fvega@andrew.cmu.edu}
 	\\
-	TA: Mrinal Verghese & \textbf{Email:} \href{mverghes@andrew.cmu.edu}{mverghes@andrew.cmu.edu}
+ TA: Arun Bishop & \textbf{Email:} \href{arunleob@cmu.edu}{arunleob@cmu.edu}
+ \\
+	TA: Sam Schoedel & \textbf{Email:} \href{sschoede@andrew.cmu.edu}{sschoede@andrew.cmu.edu}
 \end{tabular}
 \end{center}
 
 \section*{Logistics}
 
 \begin{itemize}
-	\item Lectures will be held Tuesdays and Thursdays 5:00--6:20 PM Eastern time in Room 160 in Hall of Arts. Lectures will also be live streamed on zoom and recorded for later viewing.
-	\item Recitation will be held Fridays at \todo{based on survey}.
+	\item Lectures will be held Tuesdays and Thursdays 5:00--6:20 PM Eastern time in TEP 1403. Lectures will also be live streamed on zoom and recorded for later viewing.
+	\item Recitation will be held Fridays on Zoom at 11 AM.
 	\item Office hours will be \todo{based on survey}.
-	\item Homework assignments will be due by 11:59 PM Eastern time on Wednesdays. Two weeks will be given to complete each assignment.
+	% \item Homework assignments will be due by 11:59 PM Eastern time on Wednesdays. Two weeks will be given to complete each assignment.
 	\item GitHub will be used to distribute assignments and GradeScope will be used for submissions.
-	\item \href{https://piazza.com/cmu/spring2023/16745/home}{Piazza} will be used for general discussion and Q\&A outside of class and office hours.
+	\item \href{https://piazza.com/cmu/spring2024/16745/home}{Piazza} will be used for general discussion and Q\&A outside of class and office hours.
 	\item There will be no exams. Instead, students will form groups of up to five to complete a project on a topic of their choice.
 \end{itemize}
 
@@ -133,53 +135,264 @@ If you have questions about this or your coursework, please let me know. Thank y
 \begin{tabular}{c|c|c|c}
 	Week & Dates & Topics & Assignments \\
 	\hline
-	\multirow{2}{*}{1} & Jan 17 & Course Overview, \& Dynamics Intro & Survey \\
-	 & Jan 19 & Stability, Discrete-Time Dynamics &  HW0 Out\\
+	\multirow{2}{*}{1} & Jan 16 & 
+        Course Overview, \& Dynamics Intro & Survey \\
+	 & Jan 18 & Stability, Discrete-Time Dynamics &  HW0 Out\\
 	\hline
-	\multirow{2}{*}{2} & Jan 24 & Optimization Intro & HW0 Due \\
-	 & Jan 26 & Numerical Optimization Pt. 1 & HW1 Out \\
+	\multirow{2}{*}{2} & Jan 23 &
+        Optimization Intro & HW0 Due \\
+	 & Jan 25 & Numerical Optimization Pt. 1 & HW1 Out \\
 	\hline
-	\multirow{2}{*}{3}  & Jan 31 & Numerical Optimization Pt. 2 \& Optimal Control Intro &  \\
-	 & Feb 2 & Pontryagin, Shooting Methods, \& LQR Intro &  \\
+	\multirow{2}{*}{3}  & Jan 30 &
+        Numerical Optimization Pt. 2 \& Optimal Control Intro &  \\
+	 & Feb 1 & Pontryagin, Shooting Methods, \& LQR Intro &  \\
 	\hline
-	\multirow{2}{*}{4}  & Feb 7 & LQR as a QP \& Riccati Equation & HW 1 Due \\
-	 & Feb 9 & \textcolor{red}{No Class} & HW 2 Out \\
+	\multirow{2}{*}{4}  & Feb 6 &
+        LQR as a QP \& Riccati Equation & HW 1 Due \\
+	 & Feb 8 & Dynamic Programming \& Intro to Convexity & HW 2 Out \\
 	\hline
-	\multirow{2}{*}{5}  & Feb 14 & Dynamic Programming \& Intro to Convexity & \\
-	 & Feb 16 & Convex Model-Predictive Control &  \\
+	\multirow{2}{*}{5}  & Feb 13 &  Convex Model-Predictive Control & \\
+	 & Feb 15 & Intro to Trajectory Optimization, Iterative LQR, \& DDP &  \\
 	\hline
-	\multirow{2}{*}{6}  & Feb 21 & Intro to Trajectory Optimization, Iterative LQR, \& DDP & HW2 Due \\
-	 & Feb 23 & DDP with Constraints and Free Final Time & HW3 Out \\
+	\multirow{2}{*}{6}  & Feb 20 & DDP with Constraints and Free Final Time & HW2 Due \\
+	 & Feb 22 & Direct Trajectory Optimization, Collocation, \& SQP & HW3 Out \\
 	\hline
-	\multirow{2}{*}{7}  & Feb 28 & Direct Trajectory Optimization, Collocation, \& SQP & \\
-	 & Mar 2 & Attitude Intro: SO(3) \& Quaternions & \\
+	\multirow{2}{*}{7}  & Feb 27 & Attitude Intro: SO(3) \& Quaternions
+         & \\
+	 & Feb 29 &  Optimizing with Attitude& \\
 	\hline
-	\multirow{2}{*}{8}  & Mar 7 & \textcolor{red}{No Class} & \\
-	 & Mar 9 & \textcolor{red}{No Class} &   \\
+	\multirow{2}{*}{8}  & Mar 5 & 
+        \textcolor{red}{No Class} & \\
+	 & Mar 7 & \textcolor{red}{No Class} &   \\
 	\hline
-	\multirow{2}{*}{9}  & Mar 14 & Optimizing with Attitude & HW3 Due \\
-	 & Mar 16 & LQR with Attitude, Quadrotors, \& Contact Intro & HW4 Out \\
+	\multirow{2}{*}{9}  & Mar 12 & LQR with Attitude, Quadrotors, \& Contact Intro
+         & HW3 Due \\
+	 & Mar 14 & Trajectory Optimization for Hybrid Systems & HW4 Out \\
 	\hline
-	\multirow{2}{*}{10}  & Mar 21 & Trajectory Optimization for Hybrid Systems &  \\
-	 & Mar 23 & Data-Driven Methods \& Iterative Learning Control &   \\
+	\multirow{2}{*}{10}  & Mar 19 & Data-Driven Methods \& Iterative Learning Control
+         &  \\
+	 & Mar 21 & Stochastic Optimal Control \& LQG &   \\
 	 \hline
-	\multirow{2}{*}{11}  & Mar 28 & Stochastic Optimal Control \& LQG & HW4 Due \\
-	 & Mar 30 & Robust Control \& Minimax DDP &   \\
+	\multirow{2}{*}{11}  & Mar 26 &Robust Control \& Minimax DDP
+         & HW4 Due \\
+	 & Mar 28 & RL from an Optimal Control Perspective &   \\
 	 \hline
-	\multirow{2}{*}{12}  & Apr 4 & RL from an Optimal Control Perspective &   \\
-	 & Apr 6 & Practical Tips \& Tricks, Control History &   \\
+	\multirow{2}{*}{12}  & Apr 2 & Practical Tips \& Tricks, Control History 
+         &   \\
+	 & Apr 4 & Case Study: How to Land a Rocket &   \\
 	 \hline
-	\multirow{2}{*}{13}  & Apr 11 & Case Study: How to Land a Rocket &  \\
-	 & Apr 13 & \textcolor{red}{No Class} &   \\
+	\multirow{2}{*}{13}  & Apr 9 & Case Study: How to Drive a Car
+         &  \\
+	 & Apr 11 & \textcolor{red}{No Class} &   \\
 	 \hline
-	\multirow{2}{*}{14}  & Apr 18 & Case Study: How to Drive a Car &  \\
-	 & Apr 20 & Case Study: How to Walk &   \\
+	\multirow{2}{*}{14}  & Apr 16 & Case Study: How to Walk
+         &  \\
+	 & Apr 18 &  TBD &   \\
 	 \hline
-	\multirow{2}{*}{14}  & Apr 25 & Project Presentations &  \\
-	 & Apr 27 & Project Presentations &   \\
+	\multirow{2}{*}{14}  & Apr 23 &
+        Project Presentations &  \\
+	 & Apr 25 & Project Presentations &   \\
 \end{tabular}
 
-\clearpage
+% \begin{tabular}{c|c|c|c}
+% 	Week & Dates & Topics & Assignments \\
+% 	\hline
+% 	\multirow{2}{*}{1} & Jan 16 & Course Overview, \& Dynamics Intro & Survey \\
+% 	 & Jan 18 & Stability, Discrete-Time Dynamics &  HW0 Out\\
+% 	\hline
+% 	\multirow{2}{*}{2} & Jan 23 & Optimization Intro & HW0 Due \\
+% 	 & Jan 25 & Numerical Optimization Pt. 1 & HW1 Out \\
+% 	\hline
+% 	\multirow{2}{*}{3}  & Jan 30 & Numerical Optimization Pt. 2 \& Optimal Control Intro &  \\
+% 	 & Feb 1 & Pontryagin, Shooting Methods, \& LQR Intro &  \\
+% 	\hline
+% 	\multirow{2}{*}{4}  & Feb 6 & LQR as a QP \& Riccati Equation & HW 1 Due \\
+% 	 & Feb 13 & Dynamic Programming \& Intro to Convexity & \\
+% 	\hline
+% 	\multirow{2}{*}{5}  & Feb 15 & Convex Model-Predictive Control &  \\
+% 	 & Feb 20 & Intro to Trajectory Optimization, Iterative LQR, \& DDP & HW2 Due \\
+% 	\hline
+% 	\multirow{2}{*}{6}  & Feb 22 & DDP with Constraints and Free Final Time & HW3 Out \\
+% 	 & Feb 27 & Direct Trajectory Optimization, Collocation, \& SQP & \\
+% 	\hline
+% 	\multirow{2}{*}{7}  & Feb 29 & Attitude Intro: SO(3) \& Quaternions & \\
+% 	 & Mar 5 & \textcolor{red}{No Class} & \\
+% 	\hline
+% 	\multirow{2}{*}{8}  & Mar 7 & \textcolor{red}{No Class} & \\
+% 	 & Mar 12 & Optimizing with Attitude & HW3 Due \\
+% 	\hline
+% 	\multirow{2}{*}{9}  & Mar 14 & LQR with Attitude, Quadrotors, \& Contact Intro & HW4 Out \\
+% 	 & Mar 19 & Trajectory Optimization for Hybrid Systems &  \\
+% 	\hline
+% 	\multirow{2}{*}{10}  & Mar 21 & Data-Driven Methods \& Iterative Learning Control &   \\
+% 	 & Mar 26 & Stochastic Optimal Control \& LQG & HW4 Due \\
+% 	 \hline
+% 	\multirow{2}{*}{11}  & Mar 28 & Robust Control \& Minimax DDP &   \\
+% 	 & Apr 2 & RL from an Optimal Control Perspective &   \\
+% 	 \hline
+% 	\multirow{2}{*}{12}  & Apr 4 & Practical Tips \& Tricks, Control History &   \\
+% 	 & Apr 9 & Case Study: How to Land a Rocket &  \\
+% 	 \hline
+% 	\multirow{2}{*}{13}  & Apr 11 & \textcolor{red}{No Class} &   \\
+% 	 & Apr 16 & Case Study: How to Drive a Car &  \\
+% 	 \hline
+% 	\multirow{2}{*}{14}  & Apr 18 & Case Study: How to Walk &   \\
+% 	 & Apr 23 & Project Presentations &  \\
+% 	 \hline
+% 	\multirow{2}{*}{15}  & Apr 25 & Project Presentations &   \\
+% 	 & & & \\
+% \end{tabular}
+
+% \begin{tabular}{c|c|c|c}
+% 	Week & Dates & Topics & Assignments \\
+% 	\hline
+% 	1 & Jan 16 & Course Overview, \& Dynamics Intro & Survey \\
+% 	 & Jan 18 & Stability, Discrete-Time Dynamics &  HW0 Out\\
+% 	\hline
+% 	2 & Jan 23 & Optimization Intro & HW0 Due \\
+% 	 & Jan 25 & Numerical Optimization Pt. 1 & HW1 Out \\
+% 	\hline
+% 	3 & Jan 30 & Numerical Optimization Pt. 2 \& Optimal Control Intro &  \\
+% 	 & Feb 1 & Pontryagin, Shooting Methods, \& LQR Intro &  \\
+% 	\hline
+% 	4 & Feb 6 & LQR as a QP \& Riccati Equation & HW 1 Due \\
+% 	 & Feb 8 & \textcolor{red}{No Class (Mar 5)} & HW 2 Out \\
+% 	\hline
+% 	5 & Feb 13 & Dynamic Programming \& Intro to Convexity & \\
+% 	 & Feb 15 & Convex Model-Predictive Control &  \\
+% 	\hline
+% 	6 & Feb 20 & Intro to Trajectory Optimization, Iterative LQR, \& DDP & HW2 Due \\
+% 	 & Feb 22 & DDP with Constraints and Free Final Time & HW3 Out \\
+% 	\hline
+% 	7 & Feb 27 & Direct Trajectory Optimization, Collocation, \& SQP & \\
+% 	 & Feb 29 & Attitude Intro: SO(3) \& Quaternions & \\
+% 	\hline
+% 	8 & Mar 5 & \textcolor{red}{No Class (Mar 7)} & \\
+% 	 & Mar 7 & \textcolor{red}{No Class (Mar 5)} &   \\
+% 	\hline
+% 	9 & Mar 12 & Optimizing with Attitude & HW3 Due \\
+% 	 & Mar 14 & LQR with Attitude, Quadrotors, \& Contact Intro & HW4 Out \\
+% 	\hline
+% 	10 & Mar 19 & Trajectory Optimization for Hybrid Systems &  \\
+% 	 & Mar 21 & Data-Driven Methods \& Iterative Learning Control &   \\
+% 	 \hline
+% 	11 & Mar 26 & Stochastic Optimal Control \& LQG & HW4 Due \\
+% 	 & Mar 28 & Robust Control \& Minimax DDP &   \\
+% 	 \hline
+% 	12 & Apr 2 & RL from an Optimal Control Perspective &   \\
+% 	 & Apr 4 & Practical Tips \& Tricks, Control History &   \\
+% 	 \hline
+% 	13 & Apr 9 & Case Study: How to Land a Rocket &  \\
+% 	 & Apr 11 & \textcolor{red}{No Class (Apr 11)} &   \\
+% 	 \hline
+% 	14 & Apr 16 & Case Study: How to Drive a Car &  \\
+% 	 & Apr 18 & Case Study: How to Walk &   \\
+% 	 \hline
+% 	15 & Apr 23 & Project Presentations &  \\
+% 	 & Apr 25 & Project Presentations &   \\
+% \end{tabular}
+
+% % \clearpage
+
+% \begin{tabular}{c|c|c|c}
+% 	Week & Dates & Topics & Assignments \\
+% 	\hline
+% 	1 & Jan 16 & Course Overview, \& Dynamics Intro & Survey \\
+% 	 & Jan 18 & Stability, Discrete-Time Dynamics &  HW0 Out\\
+% 	\hline
+% 	2 & Jan 23 & Optimization Intro & HW0 Due \\
+% 	 & Jan 25 & Numerical Optimization Pt. 1 & HW1 Out \\
+% 	\hline
+% 	3 & Jan 30 & Numerical Optimization Pt. 2 \& Optimal Control Intro &  \\
+% 	 & Feb 1 & Pontryagin, Shooting Methods, \& LQR Intro &  \\
+% 	\hline
+% 	4 & Feb 6 & LQR as a QP \& Riccati Equation & HW 1 Due \\
+% 	 & Feb 8 & \textcolor{red}{No Class (Mar 5)} & HW 2 Out \\
+% 	\hline
+% 	5 & Feb 13 & Dynamic Programming \& Intro to Convexity & \\
+% 	 & Feb 15 & Convex Model-Predictive Control &  \\
+% 	\hline
+% 	6 & Feb 20 & Intro to Trajectory Optimization, Iterative LQR, \& DDP & HW2 Due \\
+% 	 & Feb 22 & DDP with Constraints and Free Final Time & HW3 Out \\
+% 	\hline
+% 	7 & Feb 27 & Direct Trajectory Optimization, Collocation, \& SQP & \\
+% 	 & Feb 29 & Attitude Intro: SO(3) \& Quaternions & \\
+% 	\hline
+% 	8 & Mar 5 & \textcolor{red}{No Class (Mar 7)} & \\
+% 	 & Mar 7 & \textcolor{red}{No Class (Mar 5)} &   \\
+% 	\hline
+% 	9 & Mar 12 & Optimizing with Attitude & HW3 Due \\
+% 	 & Mar 14 & LQR with Attitude, Quadrotors, \& Contact Intro & HW4 Out \\
+% 	\hline
+% 	10 & Mar 19 & Trajectory Optimization for Hybrid Systems &  \\
+% 	 & Mar 21 & Data-Driven Methods \& Iterative Learning Control &   \\
+% 	 \hline
+% 	11 & Mar 26 & Stochastic Optimal Control \& LQG & HW4 Due \\
+% 	 & Mar 28 & Robust Control \& Minimax DDP &   \\
+% 	 \hline
+% 	12 & Apr 2 & RL from an Optimal Control Perspective &   \\
+% 	 & Apr 4 & Practical Tips \& Tricks, Control History &   \\
+% 	 \hline
+% 	13 & Apr 9 & Case Study: How to Land a Rocket &  \\
+% 	 & Apr 11 & \textcolor{red}{No Class (Apr 11)} &   \\
+% 	 \hline
+% 	14 & Apr 16 & Case Study: How to Drive a Car &  \\
+% 	 & Apr 18 & Case Study: How to Walk &   \\
+% 	 \hline
+% 	15 & Apr 23 & Project Presentations &  \\
+% 	 & Apr 25 & Project Presentations &   \\
+% \end{tabular}
+
+
+% \begin{tabular}{c|c|c|c}
+% 	Week & Dates & Topics & Assignments \\
+% 	\hline
+% 	1 & Jan 16 & Course Overview, \& Dynamics Intro & Survey \\
+% 	 & Jan 18 & Stability, Discrete-Time Dynamics &  HW0 Out\\
+% 	\hline
+% 	2 & Jan 23 & Optimization Intro & HW0 Due \\
+% 	 & Jan 25 & Numerical Optimization Pt. 1 & HW1 Out \\
+% 	\hline
+% 	3 & Jan 30 & Numerical Optimization Pt. 2 \& Optimal Control Intro &  \\
+% 	 & Feb 1 & Pontryagin, Shooting Methods, \& LQR Intro &  \\
+% 	\hline
+% 	4 & Feb 6 & LQR as a QP \& Riccati Equation & HW 1 Due \\
+% 	 & Feb 8 & unimportant topic & HW 2 Out \\
+% 	\hline
+% 	5 & Feb 13 & Dynamic Programming \& Intro to Convexity & \\
+% 	 & Feb 15 & Convex Model-Predictive Control &  \\
+% 	\hline
+% 	6 & Feb 20 & Intro to Trajectory Optimization, Iterative LQR, \& DDP & HW2 Due \\
+% 	 & Feb 22 & DDP with Constraints and Free Final Time & HW3 Out \\
+% 	\hline
+% 	7 & Feb 27 & Direct Trajectory Optimization, Collocation, \& SQP & \\
+% 	 & Feb 29 & Attitude Intro: SO(3) \& Quaternions & \\
+% 	\hline
+% 	8 & Mar 5 & \textcolor{red}{No Class (Mar 7)} & \\
+% 	 & Mar 7 & \textcolor{red}{No Class (Mar 5)} &   \\
+% 	\hline
+% 	9 & Mar 12 & Optimizing with Attitude & HW3 Due \\
+% 	 & Mar 14 & LQR with Attitude, Quadrotors, \& Contact Intro & HW4 Out \\
+% 	\hline
+% 	10 & Mar 19 & Trajectory Optimization for Hybrid Systems &  \\
+% 	 & Mar 21 & Data-Driven Methods \& Iterative Learning Control &   \\
+% 	 \hline
+% 	11 & Mar 26 & Stochastic Optimal Control \& LQG & HW4 Due \\
+% 	 & Mar 28 & Robust Control \& Minimax DDP &   \\
+% 	 \hline
+% 	12 & Apr 2 & RL from an Optimal Control Perspective &   \\
+% 	 & Apr 4 & Practical Tips \& Tricks, Control History &   \\
+% 	 \hline
+% 	13 & Apr 9 & Case Study: How to Land a Rocket &  \\
+% 	 & Apr 11 & \textcolor{red}{No Class (Apr 11)} &   \\
+% 	 \hline
+% 	14 & Apr 16 & Case Study: How to Drive a Car &  \\
+% 	 & Apr 18 & Case Study: How to Walk &   \\
+% 	 \hline
+% 	15 & Apr 23 & TBD &  \\
+% 	 & Apr 25 & Project Presentations &   \\
+% \end{tabular}
+
 
 \section*{Project Guidelines}
 
