@@ -11,7 +11,7 @@
 \newcommand{\todo}[1]{\textcolor{red}{TODO: #1}}
 
 \title{16-745: Optimal Control and Reinforcement Learning}
-\author{Spring 2024}
+\author{Spring 2025}
 \date{}
 
 \begin{document}
@@ -36,15 +36,15 @@ This is a course about how to make robots move through and interact with their e
 \begin{center}
 \begin{tabular}{l l}
 	Prof. Zac Manchester & \textbf{Email:} \href{mailto:zacm@cmu.edu}{zacm@cmu.edu} \\
-	Head TA: Kevin Tracy & \textbf{Email:} \href{mailto:ktracy@cmu.edu}{ktracy@cmu.edu}
+	Head TA: Jeong Hun (JJ) Lee & \textbf{Email:} \href{mailto:jeonghunlee@cmu.edu}{jeonghunlee@cmu.edu}
 	\\
-	TA: Jeong Hun (JJ) Lee & \textbf{Email:} \href{mailto:jeonghunlee@cmu.edu}{jeonghunlee@cmu.edu}
+	TA: John Zhang & \textbf{Email:} \href{mailto:johnzhang@cmu.edu}{johnzhang@cmu.edu}
 	\\
-	TA: Fausto Vega & \textbf{Email:} \href{fvega@andrew.cmu.edu}{fvega@andrew.cmu.edu}
+	TA: Fausto Vega & \textbf{Email:} \href{mailto:fvega@andrew.cmu.edu}{fvega@andrew.cmu.edu}
 	\\
- TA: Arun Bishop & \textbf{Email:} \href{arunleob@cmu.edu}{arunleob@cmu.edu}
+ TA: Arun Bishop & \textbf{Email:} \href{mailto:arunleob@cmu.edu}{arunleob@cmu.edu}
  \\
-	TA: Sam Schoedel & \textbf{Email:} \href{sschoede@andrew.cmu.edu}{sschoede@andrew.cmu.edu}
+	TA: Ashley Kline & \textbf{Email:} \href{mailto:ankline@andrew.cmu.edu}{ankline@andrew.cmu.edu}
 \end{tabular}
 \end{center}
 
@@ -52,7 +52,7 @@ This is a course about how to make robots move through and interact with their e
 
 \begin{itemize}
 	\item Lectures will be held Tuesdays and Thursdays 5:00--6:20 PM Eastern time in TEP 1403. Lectures will also be live streamed on zoom and recorded for later viewing.
-	\item Recitation will be held Fridays on Zoom at 11 AM.
+	%\item Recitation will be held Fridays on Zoom at 11 AM.
 	\item Office hours will be \todo{based on survey}.
 	% \item Homework assignments will be due by 11:59 PM Eastern time on Wednesdays. Two weeks will be given to complete each assignment.
 	\item GitHub will be used to distribute assignments and GradeScope will be used for submissions.
@@ -78,7 +78,7 @@ There is no textbook required for this course. Video recordings of lectures and 
 
 \section*{Homework}
 
-Four homeworks will be assigned during the semester. Students will have at least two weeks to complete each assignment. All homework will be distributed and collected using GitHub. Solutions and grades will be returned within one week of homework due dates.
+Four homeworks will be assigned during the semester. Students will have at least two weeks to complete each assignment. All homework will be distributed using GitHub and collected using Gradescope. Solutions and grades will be returned within one week of homework due dates. Homework may be done collaboratively, but each student must submit their own solutions.
 
 
 \section*{Project Guidelines}
@@ -110,7 +110,8 @@ Grading will be based on:
 \begin{itemize}
 	\item 50\% Project
 	\item 40\% Homework
-	\item 10\% Participation
+	\item 5\% Quizes
+	\item 5\% Participation
 \end{itemize}
 Attendance during lectures is not required to earn a full participation grade. Students can also participate through any combination of office hours, Piazza discussions, project presentations, and by offering constructive feedback about the course to the instructors.
 
@@ -157,63 +158,63 @@ If you have questions about this or your coursework, please let me know. Thank y
 \begin{tabular}{c|c|c|c}
 	Week & Dates & Topics & Assignments \\
 	\hline
-	\multirow{2}{*}{1} & Jan 16 & 
+	\multirow{2}{*}{1} & Jan 14 & 
         Course Overview, \& Dynamics Intro & Survey \\
-	 & Jan 18 & Stability, Discrete-Time Dynamics &  HW0 Out\\
+	 & Jan 16 & Stability, Discrete-Time Dynamics &  HW0 Out\\
 	\hline
-	\multirow{2}{*}{2} & Jan 23 &
+	\multirow{2}{*}{2} & Jan 21 &
         Optimization Intro & HW0 Due \\
-	 & Jan 25 & Numerical Optimization Pt. 1 & HW1 Out \\
+	 & Jan 23 & Numerical Optimization Pt. 1 & HW1 Out \\
 	\hline
-	\multirow{2}{*}{3}  & Jan 30 &
+	\multirow{2}{*}{3}  & Jan 28 &
         Numerical Optimization Pt. 2 \& Optimal Control Intro &  \\
-	 & Feb 1 & Pontryagin, Shooting Methods, \& LQR Intro &  \\
+	 & Jan 30 & Pontryagin, Shooting Methods, \& LQR Intro &  \\
 	\hline
-	\multirow{2}{*}{4}  & Feb 6 &
+	\multirow{2}{*}{4}  & Feb 4 &
         LQR as a QP \& Riccati Equation & HW 1 Due \\
-	 & Feb 8 & Dynamic Programming \& Intro to Convexity & HW 2 Out \\
+	 & Feb 6 & Dynamic Programming \& Intro to Convexity & HW 2 Out \\
 	\hline
-	\multirow{2}{*}{5}  & Feb 13 &  Convex Model-Predictive Control & \\
-	 & Feb 15 & Intro to Trajectory Optimization, Iterative LQR, \& DDP &  \\
+	\multirow{2}{*}{5}  & Feb 11 &  Convex Model-Predictive Control & \\
+	 & Feb 13 & Intro to Trajectory Optimization, Iterative LQR, \& DDP &  \\
 	\hline
-	\multirow{2}{*}{6}  & Feb 20 & DDP with Constraints and Free Final Time & HW2 Due \\
-	 & Feb 22 & Direct Trajectory Optimization, Collocation, \& SQP & HW3 Out \\
+	\multirow{2}{*}{6}  & Feb 18 & DDP with Constraints and Free Final Time & HW2 Due \\
+	 & Feb 20 & Direct Trajectory Optimization, Collocation, \& SQP & HW3 Out \\
 	\hline
-	\multirow{2}{*}{7}  & Feb 27 & Attitude Intro: SO(3) \& Quaternions
+	\multirow{2}{*}{7}  & Feb 25 & Attitude Intro: SO(3) \& Quaternions
          & \\
-	 & Feb 29 &  Optimizing with Attitude& \\
+	 & Feb 27 &  Optimizing with Attitude& \\
 	\hline
-	\multirow{2}{*}{8}  & Mar 5 & 
+	\multirow{2}{*}{8}  & Mar 4 & 
         \textcolor{red}{No Class} & \\
-	 & Mar 7 & \textcolor{red}{No Class} &   \\
+	 & Mar 6 & \textcolor{red}{No Class} &   \\
 	\hline
-	\multirow{2}{*}{9}  & Mar 12 & LQR with Attitude, Quadrotors, \& Contact Intro
+	\multirow{2}{*}{9}  & Mar 11 & LQR with Attitude, Quadrotors, \& Contact Intro
          & HW3 Due \\
-	 & Mar 14 & Trajectory Optimization for Hybrid Systems & HW4 Out \\
+	 & Mar 13 & Trajectory Optimization for Hybrid Systems & HW4 Out \\
 	\hline
-	\multirow{2}{*}{10}  & Mar 19 & Data-Driven Methods \& Iterative Learning Control
+	\multirow{2}{*}{10}  & Mar 18 & Data-Driven Methods \& Iterative Learning Control
          &  \\
-	 & Mar 21 & Stochastic Optimal Control \& LQG &   \\
+	 & Mar 20 & Stochastic Optimal Control \& LQG &   \\
 	 \hline
-	\multirow{2}{*}{11}  & Mar 26 &Robust Control \& Minimax DDP
+	\multirow{2}{*}{11}  & Mar 25 &Robust Control \& Minimax DDP
          & HW4 Due \\
-	 & Mar 28 & RL from an Optimal Control Perspective &   \\
+	 & Mar 27 & RL from an Optimal Control Perspective &   \\
 	 \hline
-	\multirow{2}{*}{12}  & Apr 2 & Practical Tips \& Tricks, Control History 
+	\multirow{2}{*}{12}  & Apr 1 & Practical Tips \& Tricks, Control History 
          &   \\
-	 & Apr 4 & Case Study: How to Land a Rocket &   \\
+	 & Apr 3 & \textcolor{red}{No Class} &   \\
 	 \hline
-	\multirow{2}{*}{13}  & Apr 9 & Case Study: How to Drive a Car
+	\multirow{2}{*}{13}  & Apr 8 & Case Study: How to Drive a Car
          &  \\
-	 & Apr 11 & \textcolor{red}{No Class} &   \\
+	 & Apr 10 & Case Study: How to Land a Rocket &   \\
 	 \hline
-	\multirow{2}{*}{14}  & Apr 16 & Case Study: How to Walk
+	\multirow{2}{*}{14}  & Apr 15 & Case Study: How to Walk
          &  \\
-	 & Apr 18 &  TBD &   \\
+	 & Apr 17 &  TBD &   \\
 	 \hline
-	\multirow{2}{*}{14}  & Apr 23 &
+	\multirow{2}{*}{14}  & Apr 22 &
         Project Presentations &  \\
-	 & Apr 25 & Project Presentations &   \\
+	 & Apr 24 & Project Presentations &   \\
 \end{tabular}
 
 
